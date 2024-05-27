@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Ecommerce</title>
+
+    <!-- Link a nuestro archivo de estilos -->
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <!-- ========= HEADER SECTION ========= -->
+    <header class="main-header">
+      <input type="checkbox" id="responsive-menu" class="input-burger" />
+
+      <label class="burger-menu" for="responsive-menu">
+        <div class="burger-line"></div>
+      </label>
+
+      <!-- MAIN HEADER LEFT -->
+      <div class="main-header-left">
+        <a class="main-logo" href="/index.html">
+          <img
+            class="main-logo-img"
+            src="https://content.sportslogos.net/logos/14/6786/full/iowa_heartlanders_logo_primary_2022_sportslogosnet-8122.png"
+            alt="Logo principal"
+          />
+        </a>
+        <nav class="main-nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-link" href="">PRINCIPAL</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">CONTACTO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">ACERCA DE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">REGISTRO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">ADMIN PRODUCTO</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- USER INFO -->
+      <div class="user-info">
+        <span class="user-name">JOHN DOE</span>
+
+        <i class="cart-icon fa-solid fa-cart-shopping" data-count="4"></i>
+      </div>
+    </header>
+
+    <!-- ========= HEADER SECTION END ========= -->
+
+    <!-- ========= BANNER SECTION ========= -->
+    <section class="section-banner">
+      <picture>
+        <source
+          srcset="/assets/images/banner-sm.avif"
+          media="(width < 500px)"
+        />
+
+        <source
+          srcset="/assets/images/banner-md.webp"
+          media="(width < 768px)"
+        />
+
+        <img src="/assets/images/banner-lg.jpg" alt="Imagen principal banner" />
+      </picture>
+
+      <div class="banner-info">
+        <h2 class="banner-title">TITULO DEL BANNER</h2>
+
+        <p class="banner-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+          obcaecati quasi, impedit qui doloremque beatae excepturi nihil atque
+          sint quisquam accusamus nesciunt rem quia temporibus accusantium
+          expedita? Inventore, repellat distinctio!
+        </p>
+      </div>
+    </section>
+    <!-- ========= BANNER SECTION END ========= -->
+
+    <!-- ========= MAIN SECTION ========= -->
+    <main class="main-container">
+      <section class="product-section">
+        <h1 class="product-title">
+          Productos
+          <span>destacados</span>
+        </h1>
+
+        <span class="product-subtitle">Ofertas de la semana</span>
+
+        <div class="product-card-container">
+          <!-- CONTENDOR DE NUESTRAS CARD DE LOS PRODUCTOS -->
+          <article class="product-card">
+            <div class="card-header">
+              <div class="product-models">
+                <div class="circle-image">
+                  <img
+                    src="https://static.nike.com/a/images/t_default/7776f88c-1bf6-49ac-a53b-b532f4c51a87/alphafly-3-zapatillas-de-competicion-asfalto-xn6gMg.png"
+                    alt="Zapas Nike"
+                  />
+                </div>
+
+                <div class="circle-image">
+                  <img
+                    src="https://static.nike.com/a/images/t_default/7776f88c-1bf6-49ac-a53b-b532f4c51a87/alphafly-3-zapatillas-de-competicion-asfalto-xn6gMg.png"
+                    alt="Zapas Nike"
+                  />
+                </div>
+
+                <div class="circle-image">
+                  <img
+                    src="https://static.nike.com/a/images/t_default/7776f88c-1bf6-49ac-a53b-b532f4c51a87/alphafly-3-zapatillas-de-competicion-asfalto-xn6gMg.png"
+                    alt="Zapas Nike"
+                  />
+                </div>
+              </div>
+
+              <div class="product-image">
+                <img
+                  src="https://static.nike.com/a/images/t_default/7776f88c-1bf6-49ac-a53b-b532f4c51a87/alphafly-3-zapatillas-de-competicion-asfalto-xn6gMg.png"
+                  alt="Zapas Nike"
+                />
+
+                <button class="btn-quickview">vista rápida</button>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="product-info">
+                <div class="product-category">Running</div>
+
+                <div class="product-review">
+                  <!-- Estrellas usando fontawesome -->
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+              </div>
+
+              <div class="product-name">
+                <a href="#"> Zapatillas Nike Running Alphafly </a>
+              </div>
+              <div class="product-price">
+                <div class="product-discount-price">$90.00</div>
+                <div class="product-normal-price">$100.00</div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <button>Añadir</button>
+              <button class="btn-icon">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </button>
+              <button class="btn-icon">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="card-header">
+              <div class="product-models">
+                <div class="circle-image">
+                  <img
+                    src="https://static.nike.com/a/images/t_default/7776f88c-1bf6-49ac-a53b-b532f4c51a87/alphafly-3-zapatillas-de-competicion-asfalto-xn6gMg.png"
+                    alt="Zapas Nike"
+                  />
+                </div>
+
+                <div class="circle-image">
+                  <img
+                    src="https://static.nike.com/a/images/t_default/7776f88c-1bf6-49ac-a53b-b532f4c51a87/alphafly-3-zapatillas-de-competicion-asfalto-xn6gMg.png"
+                    alt="Zapas Nike"
+                  />
+                </div>
+
+                <div class="circle-image">
+                  <img
+                    src="https://static.nike.com/a/images/t_default/7776f88c-1bf6-49ac-a53b-b532f4c51a87/alphafly-3-zapatillas-de-competicion-asfalto-xn6gMg.png"
+                    alt="Zapas Nike"
+                  />
+                </div>
+              </div>
+
+              <div class="product-image">
+                <img
+                  src="https://static.nike.com/a/images/t_default/7776f88c-1bf6-49ac-a53b-b532f4c51a87/alphafly-3-zapatillas-de-competicion-asfalto-xn6gMg.png"
+                  alt="Zapas Nike"
+                />
+
+                <button class="btn-quickview">vista rápida</button>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="product-info">
+                <div class="product-category">Running</div>
+
+                <div class="product-review">
+                  <!-- Estrellas usando fontawesome -->
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+              </div>
+
+              <div class="product-name">
+                <a href="#"> Zapatillas Nike Running Alphafly </a>
+              </div>
+              <div class="product-price">
+                <div class="product-discount-price">$90.00</div>
+                <div class="product-normal-price">$100.00</div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <button>Añadir</button>
+              <button class="btn-icon">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </button>
+              <button class="btn-icon">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="card-header">
+              <div class="product-models">
+                <div class="circle-image">
+                  <img
+                    src="https://static.nike.com/a/images/t_default/7776f88c-1bf6-49ac-a53b-b532f4c51a87/alphafly-3-zapatillas-de-competicion-asfalto-xn6gMg.png"
+                    alt="Zapas Nike"
+                  />
+                </div>
+
+                <div class="circle-image">
+                  <img
+                    src="https://static.nike.com/a/images/t_default/7776f88c-1bf6-49ac-a53b-b532f4c51a87/alphafly-3-zapatillas-de-competicion-asfalto-xn6gMg.png"
+                    alt="Zapas Nike"
+                  />
+                </div>
+
+                <div class="circle-image">
+                  <img
+                    src="https://static.nike.com/a/images/t_default/7776f88c-1bf6-49ac-a53b-b532f4c51a87/alphafly-3-zapatillas-de-competicion-asfalto-xn6gMg.png"
+                    alt="Zapas Nike"
+                  />
+                </div>
+              </div>
+
+              <div class="product-image">
+                <img
+                  src="https://static.nike.com/a/images/t_default/7776f88c-1bf6-49ac-a53b-b532f4c51a87/alphafly-3-zapatillas-de-competicion-asfalto-xn6gMg.png"
+                  alt="Zapas Nike"
+                />
+
+                <button class="btn-quickview">vista rápida</button>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="product-info">
+                <div class="product-category">Running</div>
+
+                <div class="product-review">
+                  <!-- Estrellas usando fontawesome -->
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+              </div>
+
+              <div class="product-name">
+                <a href="#"> Zapatillas Nike Running Alphafly </a>
+              </div>
+              <div class="product-price">
+                <div class="product-discount-price">$90.00</div>
+                <div class="product-normal-price">$100.00</div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <button>Añadir</button>
+              <button class="btn-icon">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </button>
+              <button class="btn-icon">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="card-header">
+              <div class="product-models">
+                <div class="circle-image">
+                  <img
+                    src="https://static.nike.com/a/images/t_default/7776f88c-1bf6-49ac-a53b-b532f4c51a87/alphafly-3-zapatillas-de-competicion-asfalto-xn6gMg.png"
+                    alt="Zapas Nike"
+                  />
+                </div>
+
+                <div class="circle-image">
+                  <img
+                    src="https://static.nike.com/a/images/t_default/7776f88c-1bf6-49ac-a53b-b532f4c51a87/alphafly-3-zapatillas-de-competicion-asfalto-xn6gMg.png"
+                    alt="Zapas Nike"
+                  />
+                </div>
+
+                <div class="circle-image">
+                  <img
+                    src="https://static.nike.com/a/images/t_default/7776f88c-1bf6-49ac-a53b-b532f4c51a87/alphafly-3-zapatillas-de-competicion-asfalto-xn6gMg.png"
+                    alt="Zapas Nike"
+                  />
+                </div>
+              </div>
+
+              <div class="product-image">
+                <img
+                  src="https://static.nike.com/a/images/t_default/7776f88c-1bf6-49ac-a53b-b532f4c51a87/alphafly-3-zapatillas-de-competicion-asfalto-xn6gMg.png"
+                  alt="Zapas Nike"
+                />
+
+                <button class="btn-quickview">vista rápida</button>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="product-info">
+                <div class="product-category">Running</div>
+
+                <div class="product-review">
+                  <!-- Estrellas usando fontawesome -->
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+              </div>
+
+              <div class="product-name">
+                <a href="#"> Zapatillas Nike Running Alphafly </a>
+              </div>
+              <div class="product-price">
+                <div class="product-discount-price">$90.00</div>
+                <div class="product-normal-price">$100.00</div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <button>Añadir</button>
+              <button class="btn-icon">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </button>
+              <button class="btn-icon">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="card-header">
+              <div class="product-models">
+                <div class="circle-image">
+                  <img
+                    src="https://static.nike.com/a/images/t_default/7776f88c-1bf6-49ac-a53b-b532f4c51a87/alphafly-3-zapatillas-de-competicion-asfalto-xn6gMg.png"
+                    alt="Zapas Nike"
+                  />
+                </div>
+
+                <div class="circle-image">
+                  <img
+                    src="https://static.nike.com/a/images/t_default/7776f88c-1bf6-49ac-a53b-b532f4c51a87/alphafly-3-zapatillas-de-competicion-asfalto-xn6gMg.png"
+                    alt="Zapas Nike"
+                  />
+                </div>
+
+                <div class="circle-image">
+                  <img
+                    src="https://static.nike.com/a/images/t_default/7776f88c-1bf6-49ac-a53b-b532f4c51a87/alphafly-3-zapatillas-de-competicion-asfalto-xn6gMg.png"
+                    alt="Zapas Nike"
+                  />
+                </div>
+              </div>
+
+              <div class="product-image">
+                <img
+                  src="https://static.nike.com/a/images/t_default/7776f88c-1bf6-49ac-a53b-b532f4c51a87/alphafly-3-zapatillas-de-competicion-asfalto-xn6gMg.png"
+                  alt="Zapas Nike"
+                />
+
+                <button class="btn-quickview">vista rápida</button>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="product-info">
+                <div class="product-category">Running</div>
+
+                <div class="product-review">
+                  <!-- Estrellas usando fontawesome -->
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+              </div>
+
+              <div class="product-name">
+                <a href="#"> Zapatillas Nike Running Alphafly </a>
+              </div>
+              <div class="product-price">
+                <div class="product-discount-price">$90.00</div>
+                <div class="product-normal-price">$100.00</div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <button>Añadir</button>
+              <button class="btn-icon">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </button>
+              <button class="btn-icon">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="card-header">
+              <div class="product-models">
+                <div class="circle-image">
+                  <img
+                    src="https://static.nike.com/a/images/t_default/7776f88c-1bf6-49ac-a53b-b532f4c51a87/alphafly-3-zapatillas-de-competicion-asfalto-xn6gMg.png"
+                    alt="Zapas Nike"
+                  />
+                </div>
+
+                <div class="circle-image">
+                  <img
+                    src="https://static.nike.com/a/images/t_default/7776f88c-1bf6-49ac-a53b-b532f4c51a87/alphafly-3-zapatillas-de-competicion-asfalto-xn6gMg.png"
+                    alt="Zapas Nike"
+                  />
+                </div>
+
+                <div class="circle-image">
+                  <img
+                    src="https://static.nike.com/a/images/t_default/7776f88c-1bf6-49ac-a53b-b532f4c51a87/alphafly-3-zapatillas-de-competicion-asfalto-xn6gMg.png"
+                    alt="Zapas Nike"
+                  />
+                </div>
+              </div>
+
+              <div class="product-image">
+                <img
+                  src="https://static.nike.com/a/images/t_default/7776f88c-1bf6-49ac-a53b-b532f4c51a87/alphafly-3-zapatillas-de-competicion-asfalto-xn6gMg.png"
+                  alt="Zapas Nike"
+                />
+
+                <button class="btn-quickview">vista rápida</button>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="product-info">
+                <div class="product-category">Running</div>
+
+                <div class="product-review">
+                  <!-- Estrellas usando fontawesome -->
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+              </div>
+
+              <div class="product-name">
+                <a href="#"> Zapatillas Nike Running Alphafly </a>
+              </div>
+              <div class="product-price">
+                <div class="product-discount-price">$90.00</div>
+                <div class="product-normal-price">$100.00</div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <button>Añadir</button>
+              <button class="btn-icon">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </button>
+              <button class="btn-icon">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="card-header">
+              <div class="product-models">
+                <div class="circle-image">
+                  <img
+                    src="https://static.nike.com/a/images/t_default/7776f88c-1bf6-49ac-a53b-b532f4c51a87/alphafly-3-zapatillas-de-competicion-asfalto-xn6gMg.png"
+                    alt="Zapas Nike"
+                  />
+                </div>
+
+                <div class="circle-image">
+                  <img
+                    src="https://static.nike.com/a/images/t_default/7776f88c-1bf6-49ac-a53b-b532f4c51a87/alphafly-3-zapatillas-de-competicion-asfalto-xn6gMg.png"
+                    alt="Zapas Nike"
+                  />
+                </div>
+
+                <div class="circle-image">
+                  <img
+                    src="https://static.nike.com/a/images/t_default/7776f88c-1bf6-49ac-a53b-b532f4c51a87/alphafly-3-zapatillas-de-competicion-asfalto-xn6gMg.png"
+                    alt="Zapas Nike"
+                  />
+                </div>
+              </div>
+
+              <div class="product-image">
+                <img
+                  src="https://static.nike.com/a/images/t_default/7776f88c-1bf6-49ac-a53b-b532f4c51a87/alphafly-3-zapatillas-de-competicion-asfalto-xn6gMg.png"
+                  alt="Zapas Nike"
+                />
+
+                <button class="btn-quickview">vista rápida</button>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="product-info">
+                <div class="product-category">Running</div>
+
+                <div class="product-review">
+                  <!-- Estrellas usando fontawesome -->
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+              </div>
+
+              <div class="product-name">
+                <a
+                  href="#"
+                  title="Zapatillas Nike Running Alphafly Con descripcion larga y Lorem
+                ipsum dolor sit amet."
+                >
+                  Zapatillas Nike Running Alphafly Con descripcion larga y Lorem
+                  ipsum dolor sit amet.</a
+                >
+              </div>
+              <div class="product-price">
+                <div class="product-discount-price">$90.00</div>
+                <div class="product-normal-price">$100.00</div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <button>Añadir</button>
+              <button class="btn-icon" title="Ver más">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </button>
+              <button class="btn-icon" title="Añadir a favoritos">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="card-header">
+              <div class="product-models">
+                <div class="circle-image">
+                  <img
+                    src="https://static.nike.com/a/images/t_default/7776f88c-1bf6-49ac-a53b-b532f4c51a87/alphafly-3-zapatillas-de-competicion-asfalto-xn6gMg.png"
+                    alt="Zapas Nike"
+                  />
+                </div>
+
+                <div class="circle-image">
+                  <img
+                    src="https://static.nike.com/a/images/t_default/7776f88c-1bf6-49ac-a53b-b532f4c51a87/alphafly-3-zapatillas-de-competicion-asfalto-xn6gMg.png"
+                    alt="Zapas Nike"
+                  />
+                </div>
+
+                <div class="circle-image">
+                  <img
+                    src="https://static.nike.com/a/images/t_default/7776f88c-1bf6-49ac-a53b-b532f4c51a87/alphafly-3-zapatillas-de-competicion-asfalto-xn6gMg.png"
+                    alt="Zapas Nike"
+                  />
+                </div>
+              </div>
+
+              <div class="product-image">
+                <img
+                  src="https://static.nike.com/a/images/t_default/7776f88c-1bf6-49ac-a53b-b532f4c51a87/alphafly-3-zapatillas-de-competicion-asfalto-xn6gMg.png"
+                  alt="Zapas Nike"
+                />
+
+                <button class="btn-quickview">vista rápida</button>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="product-info">
+                <div class="product-category">Running</div>
+
+                <div class="product-review">
+                  <!-- Estrellas usando fontawesome -->
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+              </div>
+
+              <div class="product-name">
+                <a href="#"> Zapatillas Nike Running Alphafly </a>
+              </div>
+              <div class="product-price">
+                <div class="product-discount-price">$90.00</div>
+                <div class="product-normal-price">$100.00</div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <button>Añadir</button>
+              <button class="btn-icon">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </button>
+              <button class="btn-icon">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="card-header">
+              <div class="product-models">
+                <div class="circle-image">
+                  <img
+                    src="https://static.nike.com/a/images/t_default/7776f88c-1bf6-49ac-a53b-b532f4c51a87/alphafly-3-zapatillas-de-competicion-asfalto-xn6gMg.png"
+                    alt="Zapas Nike"
+                  />
+                </div>
+
+                <div class="circle-image">
+                  <img
+                    src="https://static.nike.com/a/images/t_default/7776f88c-1bf6-49ac-a53b-b532f4c51a87/alphafly-3-zapatillas-de-competicion-asfalto-xn6gMg.png"
+                    alt="Zapas Nike"
+                  />
+                </div>
+
+                <div class="circle-image">
+                  <img
+                    src="https://static.nike.com/a/images/t_default/7776f88c-1bf6-49ac-a53b-b532f4c51a87/alphafly-3-zapatillas-de-competicion-asfalto-xn6gMg.png"
+                    alt="Zapas Nike"
+                  />
+                </div>
+              </div>
+
+              <div class="product-image">
+                <img
+                  src="https://static.nike.com/a/images/t_default/7776f88c-1bf6-49ac-a53b-b532f4c51a87/alphafly-3-zapatillas-de-competicion-asfalto-xn6gMg.png"
+                  alt="Zapas Nike"
+                />
+
+                <button class="btn-quickview">vista rápida</button>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="product-info">
+                <div class="product-category">Running</div>
+
+                <div class="product-review">
+                  <!-- Estrellas usando fontawesome -->
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+              </div>
+
+              <div class="product-name">
+                <a href="#"> Zapatillas Nike Running Alphafly </a>
+              </div>
+              <div class="product-price">
+                <div class="product-discount-price">$90.00</div>
+                <div class="product-normal-price">$100.00</div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <button>Añadir</button>
+              <button class="btn-icon">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </button>
+              <button class="btn-icon">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="card-header">
+              <div class="product-models">
+                <div class="circle-image">
+                  <img
+                    src="https://static.nike.com/a/images/t_default/7776f88c-1bf6-49ac-a53b-b532f4c51a87/alphafly-3-zapatillas-de-competicion-asfalto-xn6gMg.png"
+                    alt="Zapas Nike"
+                  />
+                </div>
+
+                <div class="circle-image">
+                  <img
+                    src="https://static.nike.com/a/images/t_default/7776f88c-1bf6-49ac-a53b-b532f4c51a87/alphafly-3-zapatillas-de-competicion-asfalto-xn6gMg.png"
+                    alt="Zapas Nike"
+                  />
+                </div>
+
+                <div class="circle-image">
+                  <img
+                    src="https://static.nike.com/a/images/t_default/7776f88c-1bf6-49ac-a53b-b532f4c51a87/alphafly-3-zapatillas-de-competicion-asfalto-xn6gMg.png"
+                    alt="Zapas Nike"
+                  />
+                </div>
+              </div>
+
+              <div class="product-image">
+                <img
+                  src="https://static.nike.com/a/images/t_default/7776f88c-1bf6-49ac-a53b-b532f4c51a87/alphafly-3-zapatillas-de-competicion-asfalto-xn6gMg.png"
+                  alt="Zapas Nike"
+                />
+
+                <button class="btn-quickview">vista rápida</button>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="product-info">
+                <div class="product-category">Running</div>
+
+                <div class="product-review">
+                  <!-- Estrellas usando fontawesome -->
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+              </div>
+
+              <div class="product-name">
+                <a href="#"> Zapatillas Nike Running Alphafly </a>
+              </div>
+              <div class="product-price">
+                <div class="product-discount-price">$90.00</div>
+                <div class="product-normal-price">$100.00</div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <button>Añadir</button>
+              <button class="btn-icon">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </button>
+              <button class="btn-icon">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <!-- ========= MAIN SECTION END ========= -->
+    <footer class="main-footer">
+      <section class="footer-network">
+        <ul>
+          <li>
+            <a href="#"> <i class="fa-brands fa-facebook"></i> Facebook </a>
+          </li>
+          <li>
+            <a href="#"> <i class="fa-brands fa-instagram"></i> Instagram </a>
+          </li>
+          <li>
+            <a href="#"> <i class="fa-brands fa-linkedin"></i> LinkedIn </a>
+          </li>
+        </ul>
+      </section>
+      <section class="footer-branding"></section>
+      <section class="footer-contact"></section>
+    </footer>
+  </body>
+</html>
